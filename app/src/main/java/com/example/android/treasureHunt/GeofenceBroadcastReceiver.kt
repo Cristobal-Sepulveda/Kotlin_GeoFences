@@ -36,6 +36,7 @@ import com.google.android.gms.location.GeofencingEvent
  */
 class GeofenceBroadcastReceiver : BroadcastReceiver() {
 
+    //TODO 1.11
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == ACTION_GEOFENCE_EVENT) {
             val geofencingEvent = GeofencingEvent.fromIntent(intent)

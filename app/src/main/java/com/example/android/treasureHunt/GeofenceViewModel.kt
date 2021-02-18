@@ -33,8 +33,9 @@ import androidx.lifecycle.ViewModel
  * the background.
  */
 class GeofenceViewModel(state: SavedStateHandle) : ViewModel() {
-    private val _geofenceIndex = state.getLiveData(GEOFENCE_INDEX_KEY, -1)
     private val _hintIndex = state.getLiveData(HINT_INDEX_KEY, 0)
+
+    private val _geofenceIndex = state.getLiveData(GEOFENCE_INDEX_KEY, -1)
     val geofenceIndex: LiveData<Int>
         get() = _geofenceIndex
 
